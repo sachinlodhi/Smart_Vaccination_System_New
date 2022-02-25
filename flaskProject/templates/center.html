@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/mystyle.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+
+
+
+<body>
+<h3>
+    <div class="hvrbox">
+    <img src="{{ rec[5] }}" class="hvrbox-layer_bottom" alt="Waiting for next entry"  >
+        <div class="hvrbox-layer_top">
+    <div class="hvrbox-text">Aadhaar : {{ rec[0] }}<br>Name : {{ rec[1] }}<br> Token : {{ rec[2] }}</div>
+  </div>
+</div>
+<p> Aadhaar : {{ rec[0] }}
+<p> Name : {{ rec[1] }}</p>
+<p> Token : {{ rec[2] }}</p><p>
+<form method="POST" action="/">
+<!--Dose 1 <input type="checkbox" value='1' name="dose1"  {{ 'checked' if rec[3] else '' }} {{ 'disabled' if rec[3] else '' }} id="_checkbox" >
+    <label for="_checkbox">
+        <div id="tick_mark"></div>
+    </label>
+    Dose 2 <input type="checkbox" value='1' name="dose2" {{ 'checked' if rec[4] else '' }} {{ 'disabled' if rec[4] else '' }}>
+<br>-->
+       Dose 1 &nbsp;&nbsp;<input type="checkbox" value='1' name="dose1"  {{ 'checked' if rec[3] else '' }} {{ 'disabled' if rec[3] else '' }} >
+     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    Dose 2 &nbsp;&nbsp;<input type="checkbox" value='1' name="dose2" {{ 'checked' if rec[4] else '' }} {{ 'disabled' if rec[4] else '' }} >
+    <br><br><br>
+<a href="/prev"> &laquo; Previous</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" class="button">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <a href="/next"> Next &raquo;</a>
+
+</form>
+
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</h3>
+</body>
+</html>
