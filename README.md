@@ -1,7 +1,9 @@
 
 # Automated Aadhar-based Vaccination Registration System
 
-![Application Demo](demo_screenshot.png)
+![Application Demo](![WhatsApp Image 2023-08-22 at 11 56 20 PM (1)](https://github.com/sachinlodhi/Smart_Vaccination_System_New/assets/28351261/88175342-4143-430c-92a8-4a0c288b7230)
+)![WhatsApp Image 2023-08-22 at 11 56 35 PM](https://github.com/sachinlodhi/Smart_Vaccination_System_New/assets/28351261/c5175e92-5990-492f-8aa9-9f25d8566825)
+
 
 ## Overview
 
